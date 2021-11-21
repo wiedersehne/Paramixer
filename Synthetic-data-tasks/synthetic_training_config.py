@@ -2,6 +2,7 @@ config = {
     "adding":{
         "models":{
             "Paramixer":{
+                "name": "paramixer",
                 "add_init_linear_layer": True,
                 "vocab_size": 1,
                 "embedding_size": 32,
@@ -15,7 +16,7 @@ config = {
                 "use_pos_embedding": False,
                 "problem": "adding",
                 "protocol": "chord",
-                'n_layers': 2
+                'n_layers': 1
             },
             "Transformer":{
                 "name": "transformer",
@@ -113,6 +114,7 @@ config = {
     "order":{
         "models":{
             "Paramixer":{
+                "name": "paramixer",
                 "add_init_linear_layer": False,
                 "vocab_size": 6,
                 "embedding_size": 32,
@@ -125,7 +127,7 @@ config = {
                 "use_residuals": True,
                 "use_pos_embedding": True,
                 "problem": "chord",
-                'n_layers': 4
+                'n_layers': 1
             },
             "Transformer":{
                 "name": "transformer",
