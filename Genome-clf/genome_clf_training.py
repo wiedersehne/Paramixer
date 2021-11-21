@@ -103,16 +103,7 @@ elif cfg_model["name"] == "lstransformer":
             cfg_model["problem"],
             cfg_model["pooling_type"]
         )
-elif cfg_model["name"] == "convmixer":
-        net = ConvmixerHead(
-            cfg_model["vocab_size"],
-            cfg_model["dim"],
-            cfg_model["depth"],
-            cfg_model["max_seq_len"],
-            cfg_model["n_class"],
-            cfg_model["problem"],
-            cfg_model["pooling_type"]
-        )
+
 print(net)
 print('Number of trainable parameters', count_params(net))
 
