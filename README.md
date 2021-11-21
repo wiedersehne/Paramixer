@@ -15,12 +15,12 @@ To reproduce the synthetic data experiment results, you have to generate the seq
 `{problem}_{n_vec}_val.pt`
 `{problem}_{n_vec}_val_targets.pt`
 
-To train PSF-Attn and X-formers, you can just run ***synth_training.py***. You can transfer to a different task by changing the following settings:
+To train Paramixer and X-formers, you can just run ***synth_training.py***. You can transfer to a different task by changing the following settings:
 
     cfg_model = config['order']['models']['Transformer']  
     cfg_training = config['order']['training']
 
-We provide used configurations for each model on each task in ***synthetic_training_config.py***. For instance, we use the following setting for PSF-Attn on Adding problem.
+We provide used configurations for each model on each task in ***synthetic_training_config.py***. For instance, we use the following setting for Paramixer on Adding problem.
 
     "Paramixer":{
                 "add_init_linear_layer": True,
@@ -95,7 +95,7 @@ At the end of this file, there is a part responsible for making ***img_paths.csv
 
 ### How to run the training files:
 After running ***"task_name"_preprocessing.py*** files, the training/testing/(validation) files appear.
-Similarly to data preprocessing, there are corresponding files for training PSF-Attn on each task:
+Similarly to data preprocessing, there are corresponding files for training Paramixer on each task:
  - ***cifar10_training.py***
  - ***imdb_training.py***
  - ***listops_training.py***
