@@ -1,7 +1,7 @@
 from paramixer import Paramixer
 from xformers import  LinformerHead, PerformerHead, TransformerHead, ReformerHead, LSTransformerHead, nystromFormerHead
 from synthetic_training_config import config
-from psf_utils import DatasetCreator, count_params, seed_everything, TrainModel
+from paramixer_utils import DatasetCreator, count_params, seed_everything, TrainModel
 
 import sys
 import torch
