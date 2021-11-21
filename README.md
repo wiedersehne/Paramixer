@@ -117,10 +117,12 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 ## Genome CLassification
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
+
 (2) run **noncode_preprocessing.py** to generate tensors for training.
 
 ### How to get MTcDNA data:
 (1) download mouse and turtles cDNA sequences from http://www.ensembl.org/info/data/ftp/index.html .
+
 (2) run **ensembl_preprocessing.py** to generate tensors for training.
 
 ### How to run the training files:
