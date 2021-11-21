@@ -15,27 +15,29 @@ To reproduce the synthetic data experiment results, you have to generate the seq
 `{problem}_{n_vec}_val.pt`
 `{problem}_{n_vec}_val_targets.pt`
 
-To train PSF-Attn and X-formers, you can just run ***psf_training.py*** and ***xformer_training.py***, respectively. You can transfer to a different task by changing the following settings:
+To train PSF-Attn and X-formers, you can just run ***synth_training.py***. You can transfer to a different task by changing the following settings:
 
     cfg_model = config['order']['models']['Transformer']  
     cfg_training = config['order']['training']
 
 We provide used configurations for each model on each task in ***synthetic_training_config.py***. For instance, we use the following setting for PSF-Attn on Adding problem.
 
-    "PSF":{  
-    "add_init_linear_layer": True,  
-    "vocab_size": 1,  
-    "dim": 32,  
-    "Ws": [32, 'GELU'],  
-    "V": [32, 'GELU'],  
-    "pooling_type": "FLATTEN",  
-    "head": ['linear'],  
-    "n_class": 1,  
-    "n_channels_V": 8,  
-    "use_cuda": True,  
-    "use_residuals": True,  
-    "use_pos_embedding": False,  
-    "problem": "adding"}
+    "Paramixer":{
+                "add_init_linear_layer": True,
+                "vocab_size": 1,
+                "embedding_size": 32,
+                "dim": 32,
+                "pooling_type": "FLATTEN",
+                "head": ['linear'],
+                "n_class": 1,
+                "n_channels_V": 32,
+                "use_cuda": True,
+                "use_residuals": True,
+                "use_pos_embedding": False,
+                "problem": "adding",
+                "protocol": "chord",
+                'n_layers': 2
+            },
 
 ## Long Range Arena
 The data set for the LRA benchmark is publicly available. The information about data and the download link can be found in the official GitHub repository: https://github.com/google-research/long-range-arena.
