@@ -100,16 +100,33 @@ Similarly to data preprocessing, there are corresponding files for training PSF-
  - ***pathfinder_training.py***
 
 ## Long Document Classification
-To run the code you should:
+### How to get the data:
+(1) download data from https://github.com/LiqunW/Long-document-dataset .
+(2) run **build_dataset()** in **articles_preprocessing.py**.
+(3) generate tensors using **get_articles_data(seq_len)** in **articles_preprocessing.py**.
 
+### How to run the training files:
+python ***long_document_training.py***
 
-Explanation of the files we use in this part:
+You can choose different models (Paramixer, Linformer, Performer, Transformer, Nystromformer, LSTransformer, Reformer) in this way: 
+
+`cfg_model = config['long_document_data']["a_model_name"]
+`
 
 
 ## Genome CLassification
-To run the code you should:
+### How to get HFDNA data:
+(1) download human and fruitfly data from http://www.noncode.org/download.php .
+(2) run **noncode_preprocessing.py** to generate tensors for training.
+
+### How to get MTcDNA data:
+(1) download mouse and turtles cDNA sequences from http://www.ensembl.org/info/data/ftp/index.html .
+(2) run **ensembl_preprocessing.py** to generate tensors for training.
+
+### How to run the training files:
+python ***genome_clf_training.py***
 
 
-Explanation of the files we use in this part:
+
 
 
