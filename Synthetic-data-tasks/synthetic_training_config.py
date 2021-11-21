@@ -126,7 +126,8 @@ config = {
                 "use_cuda": True,
                 "use_residuals": True,
                 "use_pos_embedding": True,
-                "problem": "chord",
+                "protocol": "chord",
+                "problem": "order",
                 'n_layers': 1
             },
             "Transformer":{
