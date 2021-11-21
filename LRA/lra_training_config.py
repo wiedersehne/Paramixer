@@ -92,7 +92,7 @@ config = {
             "vocab_size": 95+1+1, # 95 unique symbols + 1 PAD + 1 CLS
             "embedding_size": 32,
             "max_seq_len": 4096+1, # 4096 sequence length + 1 CLS
-            "n_layers": 1,
+            "n_layers": 3,
             "protocol": 'chord',
             "classifier": ['linear'],
             "n_channels_V": 32,
