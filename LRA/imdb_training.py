@@ -19,7 +19,6 @@ cfg_training = config['imdb']['training']
 print(torch.cuda.get_device_name(cfg_training["device_id"]))
 torch.cuda.set_device(cfg_training["device_id"])
 
-# Initialize PSFNet
 net = Paramixer(
         vocab_size=cfg_model["vocab_size"],
         embedding_size=cfg_model["embedding_size"],
