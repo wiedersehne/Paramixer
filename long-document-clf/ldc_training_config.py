@@ -112,10 +112,10 @@ config = {
         },
         "training":{
             "device_id": 0,
-            "batch_size":8,
+            "batch_size":16,
             "learning_rate":0.0001,
             "eval_frequency":1,
-            "num_train_steps":20
+            "num_train_steps":50
         },
     }
 }
