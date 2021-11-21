@@ -26,7 +26,7 @@ print(torch.cuda.get_device_name(cfg_training["device_id"]))
 torch.cuda.set_device(cfg_training["device_id"])
 
 
-# Initialize PSFNet
+# Initialize Paramixer
 if cfg_model["name"] == "paramixer":
     net = Paramixer(
         vocab_size=cfg_model["vocab_size"],
