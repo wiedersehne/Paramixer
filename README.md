@@ -102,7 +102,9 @@ Similarly to data preprocessing, there are corresponding files for training PSF-
 ## Long Document Classification
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
+
 (2) run **build_dataset()** in **articles_preprocessing.py**.
+
 (3) generate tensors using **get_articles_data(seq_len)** in **articles_preprocessing.py**.
 
 ### How to run the training files:
