@@ -118,7 +118,7 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 `
 
 
-## Genome CLassification
+## Genome Classification
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
 
