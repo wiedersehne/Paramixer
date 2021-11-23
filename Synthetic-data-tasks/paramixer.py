@@ -110,7 +110,7 @@ class AttentionModule(nn.Module):
         super(AttentionModule, self).__init__()
         self.embedding_size = embedding_size
         self.max_seq_len = max_seq_len
-        self.n_W = math.ceil(np.log2(self.max_seq_len))
+        self.n_W = int(np.log2(self.max_seq_len))
         self.n_links = self.n_W + 1
         self.protocol = protocol
         self.embedding_each_head = int(embedding_size)
@@ -148,17 +148,12 @@ class AttentionModule(nn.Module):
 
 
     def forward(self, V, data):
-
-        # Vs = []
-
-        # Iterate over all heads
         # Get V
         V = self.g(V)
         w_index = 0
+        # Init residual connection
+        res_conn = V
         for m in range(self.n_W):
-
-            # Init residual connection
-            res_conn = V
             # Get W_m
             # W = self.fs[h][m](data)
             W = self.fs[m](data)
