@@ -143,17 +143,15 @@ class AttentionModule(nn.Module):
             self.embedding_size
         )
 
-        # Init O (head mixing)
-        self.o = nn.Linear(self.embedding_size, self.embedding_size, bias=False)
-
 
     def forward(self, V, data):
         # Get V
         V = self.g(V)
         w_index = 0
-        # Init residual connection
-        res_conn = V
         for m in range(self.n_W):
+            # For order problem on length >= 16384, move res_conn=V outside this for loop.
+            # Init residual connection
+            res_conn = V
             # Get W_m
             # W = self.fs[h][m](data)
             W = self.fs[m](data)
