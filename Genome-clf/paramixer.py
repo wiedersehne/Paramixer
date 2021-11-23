@@ -153,7 +153,6 @@ class AttentionModule(nn.Module):
         # Apply the first dropout
         #V = self.dropout1(V)
 
-        # Iterate over all heads
         # Get V
         V = self.g(V)
         w_index = 0
