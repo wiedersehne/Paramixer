@@ -1,5 +1,4 @@
 
-# from psf import PSFNet
 from paramixer import Paramixer
 from lra_training_config import config
 from paramixer_utils import DatasetCreator, count_params, seed_everything, TrainPSF
