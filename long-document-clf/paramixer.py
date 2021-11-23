@@ -3,12 +3,9 @@ import sys
 import numpy as np
 import torch
 import itertools
-from torch import layer_norm, nn
+from torch import nn
 from typing import Union, List
-
-import torch_geometric
 from torch_sparse import spmm
-from torch.utils.data import Dataset
 
 
 def get_chord_indices_assym(n_vec, n_link):
@@ -113,7 +110,7 @@ class AttentionModule(nn.Module):
         super(AttentionModule, self).__init__()
         self.embedding_size = embedding_size
         self.max_seq_len = max_seq_len
-        self.n_W = math.ceil(np.log2(self.max_seq_len))
+        self.n_W = int(np.log2(self.max_seq_len))
         self.n_links = self.n_W + 1
         self.protocol = protocol
         self.embedding_each_head = int(embedding_size)
@@ -289,17 +286,3 @@ class Paramixer(nn.Module):
         V = self.final(V.view(V.size(0), -1))
 
         return V
-
-# net = Paramixer(
-#         vocab_size=256,
-#         embedding_size=128,
-#         max_seq_len=1024,
-#         n_heads=1,
-#         n_layers=2,
-#         n_class=10,
-#         protocol='dil',
-#         dropout1_p=0.0,
-#         dropout2_p=0.0
-# )
-
-# print(net)
