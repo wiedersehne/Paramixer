@@ -105,9 +105,11 @@ Similarly to data preprocessing, there are corresponding files for training Para
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
-(2) run **build_dataset()** in **articles_preprocessing.py**.
+(2) run **load_data()** to combine all the texts belonging to one category in one .csv file.
 
-(3) generate tensors using **get_articles_data(seq_len)** in **articles_preprocessing.py**.
+(3) run **build_dataset()** in **articles_preprocessing.py**.
+
+(4) generate tensors using **get_articles_data(seq_len)** in **articles_preprocessing.py**.
 
 ### How to run the training files:
 python ***long_document_training.py***
