@@ -10,6 +10,26 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import tensorflow as tf
 
+def load_data():
+    """
+    load acdemic papers from txt
+    :return:
+    """
+    directory = os.path.normpath("Long-document-dataset-master/data")
+    dirs = [x[0] for x in os.walk(directory)][1:]
+    for dir in dirs:
+        df = pd.DataFrame(columns=['content', 'label'])
+        for filename in os.listdir(dir):
+            # print(filename)
+            with open(os.path.join(dir, filename), 'r') as f:
+                text = f.read().replace('\n', '')
+                #print(len(text))
+                df = df.append({'content': text, 'label': dir[-5:]}, ignore_index=True)
+                f.close()
+        print(df.shape)
+        df.to_csv(dir+".csv", index=False)
+        
+
 def build_dataset():
     """
     70% train 20% val and 10% test
