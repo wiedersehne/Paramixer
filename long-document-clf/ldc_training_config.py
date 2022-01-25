@@ -2,7 +2,7 @@ config = {
     "long_document_data":{
         "Paramixer":{
             "name":"paramixer",
-            "vocab_size": 4288 + 1 + 1, # 5 unique symbols + 1 PAD + 1 CLS
+            "vocab_size": 4288 + 1 + 1, # 4288 unique symbols + 1 PAD + 1 CLS
             "embedding_size": 100,
             "max_seq_len": 16384+1,
             "n_W": 14,
