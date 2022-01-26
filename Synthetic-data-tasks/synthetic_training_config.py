@@ -184,7 +184,7 @@ config = {
                 "n_class": 4,
                 "use_cuda": True,
                 "use_pos_embedding": True,
-                "problem": "adding"
+                "problem": "order"
             },
             "Nystromformer":{
                 "name": "nystromformer",
@@ -198,7 +198,7 @@ config = {
                 "n_class": 4,
                 "use_cuda": True,
                 "use_pos_embedding": True,
-                "problem": "adding"
+                "problem": "order"
             },
             "LStransformer":{
                 "name": "lstransformer",
@@ -212,7 +212,7 @@ config = {
                 "n_class": 4,
                 "use_cuda": True,
                 "use_pos_embedding": True,
-                "problem": "adding"
+                "problem": "order"
             },
         },
         "training":{
