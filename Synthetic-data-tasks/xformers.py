@@ -239,7 +239,7 @@ class nystromFormerHead(nn.Module):
         else:
             x = self.encoder(x).squeeze(-2)
             positions = torch.arange(0, self.n_vec).expand(x.size(0), self.n_vec).cuda()
-            x = self.dropout1(x)
+            #x = self.dropout1(x)
             x = self.posenc(positions) + x
             x = self.nystromformer(x)
             x = self.final(x.view(x.size(0), -1))
