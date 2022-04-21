@@ -1,4 +1,5 @@
 # Paramixer
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/paramixer.png)
 
 ## Install requirements.txt
 All the system requirements (used packages and their versions) are provided in requirements.txt.
