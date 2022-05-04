@@ -1,4 +1,5 @@
 # Paramixer
+This is a PyTorch version Implementation of Paramixer: Parameterizing Mixing Links in Sparse Factors Works Better than Dot-Product Self-Attention(CVPR 2022 Oral)
 ![alt text](https://github.com/wiedersehne/Paramixer/blob/main/paramixer.png)
 
 ## Install requirements.txt
