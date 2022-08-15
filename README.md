@@ -7,6 +7,10 @@ All the system requirements (used packages and their versions) are provided in r
 The most important packages are torch-sparse and torch-geometric. The batched sparse multiplication described in the main paper is built upon torch_sparse.spmm and torch_geometric.DataLoader functions. Make sure they are installed. 
 
 ## Synthetic task
+
+### Experimental Results
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/paramixer.png)
+
 To reproduce the synthetic data experiment results, you have to generate the sequences data via ***synth_data_generation.py***. Based on the set sequence length, it will create tensors for both the Adding and Temporal Order problems.  By default it iterates over all sequences lengths: `[2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, 2**14, 2**15]`. The script generates six tensors for each length and problem and stores them in the default folder in the following format:
 
 `{problem}_{n_vec}_train.pt`
@@ -106,6 +110,8 @@ Similarly to data preprocessing, there are corresponding files for training Para
  - ***pathfinder_training.py***
 
 ## Long Document Classification
+### Experimental Results
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png)
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
@@ -125,6 +131,8 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 
 
 ## Genome Classification
+### Experimental Results
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/genome.png)
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
 
