@@ -111,7 +111,7 @@ Similarly to data preprocessing, there are corresponding files for training Para
 
 ## Long Document Classification
 ### Experimental Results
-<img src="https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png" width="400">
+<img src="https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png" width="350">
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
