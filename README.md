@@ -48,7 +48,7 @@ We provide used configurations for each model on each task in ***synthetic_train
 The data set for the LRA benchmark is publicly available. The information about data and the download link can be found in the official GitHub repository: https://github.com/google-research/long-range-arena.
 
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png)
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png){ width: 200px; }
 
 ### Data preparation
 
