@@ -48,7 +48,7 @@ We provide used configurations for each model on each task in ***synthetic_train
 The data set for the LRA benchmark is publicly available. The information about data and the download link can be found in the official GitHub repository: https://github.com/google-research/long-range-arena.
 
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png){ width: 200px; }
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png =x250)
 
 ### Data preparation
 
@@ -111,7 +111,7 @@ Similarly to data preprocessing, there are corresponding files for training Para
 
 ## Long Document Classification
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png){ width: 200px; }
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png =x250)
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
@@ -132,7 +132,7 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 
 ## Genome Classification
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/genome.png){ width: 200px; }
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/genome.png =x250)
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
 
