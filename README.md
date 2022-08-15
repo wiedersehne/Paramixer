@@ -9,7 +9,7 @@ The most important packages are torch-sparse and torch-geometric. The batched sp
 ## Synthetic task
 
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/adding_err.pdf)
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/adding_err.png)
 
 To reproduce the synthetic data experiment results, you have to generate the sequences data via ***synth_data_generation.py***. Based on the set sequence length, it will create tensors for both the Adding and Temporal Order problems.  By default it iterates over all sequences lengths: `[2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, 2**14, 2**15]`. The script generates six tensors for each length and problem and stores them in the default folder in the following format:
 
@@ -48,7 +48,7 @@ We provide used configurations for each model on each task in ***synthetic_train
 The data set for the LRA benchmark is publicly available. The information about data and the download link can be found in the official GitHub repository: https://github.com/google-research/long-range-arena.
 
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png | width=250)
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/image.png)
 
 ### Data preparation
 
@@ -111,7 +111,7 @@ Similarly to data preprocessing, there are corresponding files for training Para
 
 ## Long Document Classification
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png | width=250)
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png)
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
@@ -132,7 +132,7 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 
 ## Genome Classification
 ### Experimental Results
-![alt text](https://github.com/wiedersehne/Paramixer/blob/main/genome.png | width=250)
+![alt text](https://github.com/wiedersehne/Paramixer/blob/main/genome.png)
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
 
