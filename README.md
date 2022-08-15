@@ -7,6 +7,8 @@ All the system requirements (used packages and their versions) are provided in r
 
 The most important packages are torch-sparse and torch-geometric. The batched sparse multiplication described in the main paper is built upon torch_sparse.spmm and torch_geometric.DataLoader functions. Make sure they are installed. 
 
+***To try your task, please refer to paramixer_demo.py.***
+
 ## Synthetic task
 
 ### Experimental Results
