@@ -111,7 +111,7 @@ Similarly to data preprocessing, there are corresponding files for training Para
 
 ## Long Document Classification
 ### Experimental Results
-<img src="https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png" width="100">
+<img src="https://github.com/wiedersehne/Paramixer/blob/main/longdocument.png" width="600">
 ### How to get the data:
 (1) download data from https://github.com/LiqunW/Long-document-dataset .
 
@@ -133,7 +133,7 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 ## Genome Classification
 
 ### Experimental Results
-<img src="https://github.com/wiedersehne/Paramixer/blob/main/genome.png" width="100">
+<img src="https://github.com/wiedersehne/Paramixer/blob/main/genome.png" width="600">
 
 ### How to get HFDNA data:
 (1) download human and fruitfly data from http://www.noncode.org/download.php .
