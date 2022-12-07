@@ -38,9 +38,9 @@ class TransformerHead(nn.Module):
         positions = torch.arange(0, self.n_vec).expand(x.size(0), self.n_vec).cuda()
         x = self.dropout1(x)
         x = self.posenc(positions) + x
-        x = s.permute(1, 0, 2)
+        x = x.permute(1, 0, 2)
         x = self.transformer_encoder(x)
-        x = s.permute(1, 0, 2)
+        x = x.permute(1, 0, 2)
         if self.pooling_type == "CLS":
             x = x[:,0,:]
             x = self.cls_final(x)
