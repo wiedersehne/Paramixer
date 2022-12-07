@@ -32,13 +32,17 @@ class TransformerHead(nn.Module):
     def forward(self, x):
         if self.problem == "adding":
             x = self.linear(x)
+            x = s.permute(1, 0, 2)
             x = self.transformer_encoder(x)
+            x = s.permute(1, 0, 2)
             x = self.final(x.view(x.size(0), -1))
         else:
             x = self.encoder(x).squeeze(-2)
             positions = torch.arange(0, self.n_vec).expand(x.size(0), self.n_vec).cuda()
             x = self.posenc(positions) + x
+            x = s.permute(1, 0, 2)
             x = self.transformer_encoder(x)
+            x = s.permute(1, 0, 2)
             x = self.final(x.view(x.size(0), -1))
         return x
 
