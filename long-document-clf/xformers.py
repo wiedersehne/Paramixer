@@ -41,6 +41,7 @@ class TransformerHead(nn.Module):
         x = self.posenc(positions) + x
         x = x.permute(1, 0, 2)
         x = self.transformer_encoder(x)
+        x = x.permute(1, 0, 2)
         if self.pooling_type == "CLS":
             x = x[:,0,:]
             x = self.cls_final(x.view(x.size(0), -1))
