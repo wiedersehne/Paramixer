@@ -1,7 +1,7 @@
 # Paramixer: Parameterizing Mixing Links in Sparse Factors Works Better than Dot-Product Self-Attention (CVPR 2022)
 ![alt text](https://github.com/wiedersehne/Paramixer/blob/main/paramixer.png)
 ![alt text](https://github.com/wiedersehne/Paramixer/blob/main/protocols.png)
-This is the official Pytorch implementation of Paramixer from our paper https://openaccess.thecvf.com/content/CVPR2022/html/Yu_Paramixer_Parameterizing_Mixing_Links_in_Sparse_Factors_Works_Better_Than_CVPR_2022_paper.html
+This is the official Pytorch implementation of Paramixer from our paper https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_Paramixer_Parameterizing_Mixing_Links_in_Sparse_Factors_Works_Better_Than_CVPR_2022_paper.pdf
 ## Install requirements.txt
 All the system requirements (used packages and their versions) are provided in requirements.txt.
 
