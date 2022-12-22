@@ -151,7 +151,13 @@ You can choose different models (Paramixer, Linformer, Performer, Transformer, N
 ### How to run the training files:
 python ***genome_clf_training.py***
 
-
-
+## Reference
+@inproceedings{yu2022paramixer,
+  title={Paramixer: Parameterizing Mixing Links in Sparse Factors Works Better than Dot-Product Self-Attention},
+  author={Yu, Tong and Khalitov, Ruslan and Cheng, Lei and Yang, Zhirong},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={691--700},
+  year={2022}
+}
 
 
